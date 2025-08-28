@@ -23,7 +23,7 @@ export default function Footer() {
           <div>
             <h5 className="text-lg font-semibold mb-4">Cita del Doctor</h5>
             <blockquote className="text-slate-300 text-sm italic">
-              "La fe y la razón son como las dos alas con las cuales el espíritu humano se eleva hacia la contemplación de la verdad."
+              &ldquo;La fe y la razón son como las dos alas con las cuales el espíritu humano se eleva hacia la contemplación de la verdad.&rdquo;
             </blockquote>
           </div>
         </div>

@@ -33,8 +33,8 @@ export const ArticleContent = ({ article, language = 'es' }: ArticleContentProps
         <div className="space-y-4">
           <h2 className="text-xl font-semibold text-gray-900">Objeciones</h2>
           <div className="space-y-4">
-            {content.objections.map((objection: Objection) => (
-              <div key={objection.id} className="bg-red-50 border-l-4 border-red-400 p-4">
+            {content.objections.map((objection: Objection, index: number) => (
+              <div key={`objection-${objection.id}-${index}`} className="bg-red-50 border-l-4 border-red-400 p-4">
                 <div className="flex">
                   <div className="flex-shrink-0">
                     <span className="inline-flex items-center justify-center h-8 w-8 rounded-full bg-red-100 text-red-600 font-semibold text-sm">
@@ -98,8 +98,8 @@ export const ArticleContent = ({ article, language = 'es' }: ArticleContentProps
         <div className="space-y-4">
           <h2 className="text-xl font-semibold text-gray-900">Respuestas a las objeciones</h2>
           <div className="space-y-4">
-            {content.replies.map((reply: Reply) => (
-              <div key={reply.to_objection} className="bg-yellow-50 border-l-4 border-yellow-400 p-4">
+            {content.replies.map((reply: Reply, index: number) => (
+              <div key={`reply-${reply.to_objection}-${index}`} className="bg-yellow-50 border-l-4 border-yellow-400 p-4">
                 <div className="flex">
                   <div className="flex-shrink-0">
                     <span className="inline-flex items-center justify-center h-8 w-8 rounded-full bg-yellow-100 text-yellow-600 font-semibold text-sm">

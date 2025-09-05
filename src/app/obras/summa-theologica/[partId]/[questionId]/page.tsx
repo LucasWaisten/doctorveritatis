@@ -76,7 +76,7 @@ export default function QuestionPage() {
   }
 
   return (
-    <WorkLayout structure={structure}>
+    <WorkLayout structure={structure} workId="summa-theologica">
       <div className="max-w-4xl mx-auto p-6">
         <div className="space-y-6">
           {/* Header */}

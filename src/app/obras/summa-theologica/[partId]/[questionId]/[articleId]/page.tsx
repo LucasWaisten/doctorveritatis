@@ -91,7 +91,7 @@ export default function ArticlePage() {
   const nextArticle = currentArticleIndex < question.articles.length - 1 ? question.articles[currentArticleIndex + 1] : null;
 
   return (
-    <WorkLayout structure={structure}>
+    <WorkLayout structure={structure} workId="summa-theologica">
       <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="bg-white border-b border-gray-200 px-6 py-4">

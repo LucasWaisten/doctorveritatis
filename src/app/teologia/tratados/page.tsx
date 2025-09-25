@@ -5,7 +5,7 @@ export default function TratadosPage() {
     <ComingSoonPage
       title="Tratados Teológicos"
       description="Colección de tratados teológicos específicos de Santo Tomás de Aquino, incluyendo sus comentarios sobre temas doctrinales fundamentales."
-      expectedDate="Abril 2025"
+      expectedDate="Diciembre 2026"
       relatedLinks={[
         { label: "Summa Theologica", href: "/obras/summa-theologica" },
         { label: "Cuestiones Disputadas", href: "/teologia/cuestiones" },

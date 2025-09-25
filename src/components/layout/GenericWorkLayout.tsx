@@ -6,6 +6,7 @@ import { GenericSidebar } from './GenericSidebar';
 import Header from './Header';
 import { WorkStructureUnion, WorkConfig } from '../../types/work';
 import { getWorkConfig } from '../../services/workService';
+import { useSidebar } from '../../hooks/useSidebar';
 
 interface GenericWorkLayoutProps {
   children: React.ReactNode;
@@ -14,7 +15,12 @@ interface GenericWorkLayoutProps {
 }
 
 export const GenericWorkLayout = ({ children, structure, workId }: GenericWorkLayoutProps) => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const { isOpen: isSidebarOpen, isMobile, toggle: toggleSidebar } = useSidebar({
+    defaultOpen: true,
+    mobileDefaultOpen: false,
+    breakpoint: 768
+  });
+  
   const [workConfig, setWorkConfig] = useState<WorkConfig | null>(null);
   const router = useRouter();
   const pathname = usePathname();
@@ -24,19 +30,6 @@ export const GenericWorkLayout = ({ children, structure, workId }: GenericWorkLa
     const config = getWorkConfig(workId);
     setWorkConfig(config);
   }, [workId]);
-
-  // Close sidebar on mobile by default
-  useEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 768) {
-        setIsSidebarOpen(false);
-      }
-    };
-
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
 
   const handleNavigate = (path: string) => {
     router.push(path);
@@ -59,7 +52,7 @@ export const GenericWorkLayout = ({ children, structure, workId }: GenericWorkLa
       <Header />
       
       {/* Main Layout */}
-      <div className="flex pt-24"> {/* pt-24 para dar espacio al header fijo */}
+      <div className="flex pt-32"> {/* pt-32 para dar espacio al header fijo */}
         {/* Sidebar */}
         <GenericSidebar
           structure={structure}
@@ -67,23 +60,25 @@ export const GenericWorkLayout = ({ children, structure, workId }: GenericWorkLa
           currentPath={pathname}
           onNavigate={handleNavigate}
           isOpen={isSidebarOpen}
-          onToggle={() => setIsSidebarOpen(!isSidebarOpen)}
+          onToggle={toggleSidebar}
         />
 
         {/* Main Content */}
         <div className={`flex-1 transition-all duration-300 ${
-          isSidebarOpen ? 'ml-0' : 'ml-0'
+          isSidebarOpen ? 'ml-12 md:ml-0' : 'ml-12 md:ml-0'
         }`}>
           <div className="min-h-[calc(100vh-8rem)] overflow-y-auto">
-            {children}
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              {children}
+            </div>
           </div>
         </div>
 
         {/* Mobile Overlay */}
-        {isSidebarOpen && (
+        {isSidebarOpen && isMobile && (
           <div 
-            className="fixed inset-0 bg-black bg-opacity-50 z-30 md:hidden"
-            onClick={() => setIsSidebarOpen(false)}
+            className="fixed inset-0 bg-black bg-opacity-50 z-40"
+            onClick={toggleSidebar}
           />
         )}
       </div>

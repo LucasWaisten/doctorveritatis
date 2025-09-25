@@ -1,10 +1,15 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import Link from 'next/link';
 import { GenericWorkLayout } from '../layout/GenericWorkLayout';
 import { loadWorkData, getWorkConfig } from '../../services/workService';
 import { WorkStructureUnion, WorkConfig } from '../../types/work';
+import Typography from '../ui/Typography';
+import Container from '../ui/Container';
+import Card, { CardHeader, CardTitle, CardContent } from '../ui/Card';
+import Button from '../ui/Button';
+import Badge from '../ui/Badge';
+import Separator from '../ui/Separator';
 
 interface GenericWorkPageProps {
   workId: string;
@@ -73,128 +78,175 @@ export const GenericWorkPage = ({ workId }: GenericWorkPageProps) => {
 
   return (
     <GenericWorkLayout structure={structure} workId={workId}>
-      <div className="max-w-4xl mx-auto p-6">
-        <div className="text-center space-y-6">
-          <div className="space-y-4">
-            <h1 className="text-4xl font-bold text-gray-900">
+      <Container size="lg" padding="none">
+        <div className="text-center space-y-8 pt-8">
+          {/* Header Section */}
+          <div className="space-y-4 max-w-4xl mx-auto">
+            <Typography 
+              variant="h1" 
+              className="title-safe"
+            >
               {structure.title}
-            </h1>
-            <p className="text-xl text-gray-600">
+            </Typography>
+            <Typography variant="lead" color="secondary">
               {structure.author}
-            </p>
-            <p className="text-lg text-gray-500">
+            </Typography>
+            <Typography variant="body" color="muted">
               {structure.subtitle}
-            </p>
+            </Typography>
           </div>
 
-          <div className="bg-blue-50 rounded-lg p-4 mb-6">
-            <p className="text-sm text-blue-800">
-              💡 Usa el índice lateral para navegar por las diferentes secciones de la obra. 
-              Puedes expandir y contraer las secciones haciendo clic en ellas.
-            </p>
-          </div>
+          {/* Info Card */}
+          <Card variant="elevated" className="bg-blue-50 border-blue-200">
+            <CardContent>
+              <Typography variant="body-sm" color="primary" className="flex items-center gap-2">
+                💡 Usa el índice lateral para navegar por las diferentes secciones de la obra. 
+                Puedes expandir y contraer las secciones haciendo clic en ellas.
+              </Typography>
+            </CardContent>
+          </Card>
 
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              Estructura de la Obra
-            </h2>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="space-y-2">
-                {workConfig.hasQuestions && 'totalQuestions' in structure.metadata && (
-                  <p className="text-sm text-gray-600">
-                    <span className="font-medium">Total de Cuestiones:</span> {structure.metadata.totalQuestions}
-                  </p>
-                )}
-                {workConfig.hasArticles && 'totalArticles' in structure.metadata && (
-                  <p className="text-sm text-gray-600">
-                    <span className="font-medium">Total de Artículos:</span> {structure.metadata.totalArticles}
-                  </p>
-                )}
-                {workConfig.hasChapters && 'totalChapters' in structure.metadata && (
-                  <p className="text-sm text-gray-600">
-                    <span className="font-medium">Total de Capítulos:</span> {structure.metadata.totalChapters}
-                  </p>
-                )}
-              </div>
-              <div className="space-y-2">
-                <p className="text-sm text-gray-600">
-                  <span className="font-medium">Idiomas disponibles:</span> {structure.languages.join(', ')}
-                </p>
-                <p className="text-sm text-gray-600">
-                  <span className="font-medium">Última actualización:</span> {new Date(structure.metadata.lastUpdated).toLocaleDateString()}
-                </p>
-              </div>
-            </div>
-          </div>
+          <Separator className="my-8" />
 
-          <div className="bg-white rounded-lg shadow-md p-6">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4">
-              {workConfig.hasParts ? 'Partes de la Obra' : 'Libros de la Obra'}
-            </h2>
-            <div className="space-y-4">
-              {/* Render Parts */}
-              {workConfig.hasParts && 'parts' in structure.structure && (
-                structure.structure.parts.map((part) => (
-                  <div key={part.id} className="border-l-4 border-blue-500 pl-4">
-                    <div className="flex items-start justify-between">
-                      <div className="flex-1">
-                        <h3 className="text-lg font-semibold text-gray-900">
-                          Parte {part.id}: {part.title}
-                        </h3>
-                        <p className="text-sm text-gray-600 mt-1">
-                          {part.subtitle}
-                        </p>
-                        <p className="text-sm text-gray-500 mt-2">
-                          {part.description}
-                        </p>
-                        <p className="text-xs text-gray-400 mt-1">
-                          {part.questions.length} cuestiones
-                        </p>
-                      </div>
-                      <Link
-                        href={`/obras/${workId}/${part.id}`}
-                        className="ml-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-sm"
-                      >
-                        Ver parte
-                      </Link>
+          {/* Structure Info */}
+          <Card variant="elevated">
+            <CardHeader>
+              <CardTitle>Estructura de la Obra</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-3">
+                  {workConfig.hasQuestions && 'totalQuestions' in structure.metadata && (
+                    <div className="flex items-center gap-2">
+                      <Typography variant="body-sm" className="font-semibold">
+                        Total de Cuestiones:
+                      </Typography>
+                      <Badge variant="primary" size="sm">
+                        {structure.metadata.totalQuestions}
+                      </Badge>
+                    </div>
+                  )}
+                  {workConfig.hasArticles && 'totalArticles' in structure.metadata && (
+                    <div className="flex items-center gap-2">
+                      <Typography variant="body-sm" className="font-semibold">
+                        Total de Artículos:
+                      </Typography>
+                      <Badge variant="primary" size="sm">
+                        {structure.metadata.totalArticles}
+                      </Badge>
+                    </div>
+                  )}
+                  {workConfig.hasChapters && 'totalChapters' in structure.metadata && (
+                    <div className="flex items-center gap-2">
+                      <Typography variant="body-sm" className="font-semibold">
+                        Total de Capítulos:
+                      </Typography>
+                      <Badge variant="primary" size="sm">
+                        {structure.metadata.totalChapters}
+                      </Badge>
+                    </div>
+                  )}
+                </div>
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <Typography variant="body-sm" className="font-semibold">
+                      Idiomas disponibles:
+                    </Typography>
+                    <div className="flex gap-1">
+                      {structure.languages.map((lang) => (
+                        <Badge key={lang} variant="secondary" size="sm">
+                          {lang.toUpperCase()}
+                        </Badge>
+                      ))}
                     </div>
                   </div>
-                ))
-              )}
+                  <Typography variant="body-sm">
+                    <span className="font-semibold">Última actualización:</span> {new Date(structure.metadata.lastUpdated).toLocaleDateString()}
+                  </Typography>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
 
-              {/* Render Books */}
-              {workConfig.hasBooks && 'books' in structure.structure && (
-                structure.structure.books.map((book) => (
-                  <div key={book.id} className="border-l-4 border-blue-500 pl-4">
-                    <div className="flex items-start justify-between">
-                      <div className="flex-1">
-                        <h3 className="text-lg font-semibold text-gray-900">
-                          Libro {book.id}: {book.title}
-                        </h3>
-                        <p className="text-sm text-gray-600 mt-1">
-                          {book.subtitle}
-                        </p>
-                        <p className="text-sm text-gray-500 mt-2">
-                          {book.description}
-                        </p>
-                        <p className="text-xs text-gray-400 mt-1">
-                          {book.chapters.length} capítulos
-                        </p>
+          <Separator className="my-8" />
+
+          {/* Parts/Books Section */}
+          <Card variant="elevated">
+            <CardHeader>
+              <CardTitle>
+                {workConfig.hasParts ? 'Partes de la Obra' : 'Libros de la Obra'}
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <div className="space-y-6">
+                {/* Render Parts */}
+                {workConfig.hasParts && 'parts' in structure.structure && (
+                  structure.structure.parts.map((part) => (
+                    <div key={part.id} className="border-l-4 border-blue-500 pl-6 py-4 bg-blue-50 rounded-r-lg">
+                      <div className="flex items-start justify-between">
+                        <div className="flex-1">
+                          <Typography variant="h4" className="mb-2">
+                            Parte {part.id}: {part.title}
+                          </Typography>
+                          <Typography variant="body-sm" color="secondary" className="mb-2">
+                            {part.subtitle}
+                          </Typography>
+                          <Typography variant="body-sm" color="muted" className="mb-2">
+                            {part.description}
+                          </Typography>
+                          <Typography variant="caption" color="muted">
+                            {part.questions.length} cuestiones
+                          </Typography>
+                        </div>
+                        <Button
+                          href={`/obras/${workId}/${part.id}`}
+                          variant="primary"
+                          size="sm"
+                          className="ml-4"
+                        >
+                          Ver parte
+                        </Button>
                       </div>
-                      <Link
-                        href={`/obras/${workId}/${book.id}`}
-                        className="ml-4 px-4 py-2 bg-blue-600 text-white rounded-md hover:bg-blue-700 transition-colors text-sm"
-                      >
-                        Ver libro
-                      </Link>
                     </div>
-                  </div>
-                ))
-              )}
-            </div>
-          </div>
+                  ))
+                )}
+
+                {/* Render Books */}
+                {workConfig.hasBooks && 'books' in structure.structure && (
+                  structure.structure.books.map((book) => (
+                    <div key={book.id} className="border-l-4 border-blue-500 pl-6 py-4 bg-blue-50 rounded-r-lg">
+                      <div className="flex items-start justify-between">
+                        <div className="flex-1">
+                          <Typography variant="h4" className="mb-2">
+                            Libro {book.id}: {book.title}
+                          </Typography>
+                          <Typography variant="body-sm" color="secondary" className="mb-2">
+                            {book.subtitle}
+                          </Typography>
+                          <Typography variant="body-sm" color="muted" className="mb-2">
+                            {book.description}
+                          </Typography>
+                          <Typography variant="caption" color="muted">
+                            {book.chapters.length} capítulos
+                          </Typography>
+                        </div>
+                        <Button
+                          href={`/obras/${workId}/${book.id}`}
+                          variant="primary"
+                          size="sm"
+                          className="ml-4"
+                        >
+                          Ver libro
+                        </Button>
+                      </div>
+                    </div>
+                  ))
+                )}
+              </div>
+            </CardContent>
+          </Card>
         </div>
-      </div>
+      </Container>
     </GenericWorkLayout>
   );
 };

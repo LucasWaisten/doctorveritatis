@@ -5,7 +5,7 @@ export default function FilosofiaPage() {
     <ComingSoonPage
       title="Sección de Filosofía"
       description="Esta sección incluirá los comentarios filosóficos de Santo Tomás de Aquino, especialmente sus comentarios a Aristóteles, tratados de metafísica y ética."
-      expectedDate="Febrero 2025"
+      expectedDate="Diciembre 2026"
       relatedLinks={[
         { label: "Comentarios a Aristóteles", href: "/filosofia/aristoteles" },
         { label: "Metafísica", href: "/filosofia/metafisica" },

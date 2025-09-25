@@ -5,7 +5,7 @@ export default function MetafisicaPage() {
     <ComingSoonPage
       title="Metafísica"
       description="Los tratados metafísicos de Santo Tomás de Aquino, incluyendo sus comentarios sobre el ser, la sustancia, la causalidad y otros conceptos fundamentales de la metafísica."
-      expectedDate="Julio 2025"
+      expectedDate="Diciembre 2026"
       relatedLinks={[
         { label: "Comentarios a Aristóteles", href: "/filosofia/aristoteles" },
         { label: "Ética", href: "/filosofia/etica" },

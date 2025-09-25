@@ -5,7 +5,7 @@ export default function OpusculosPage() {
     <ComingSoonPage
       title="Opúsculos"
       description="Los opúsculos de Santo Tomás de Aquino, obras menores pero de gran importancia teológica y filosófica, incluyendo tratados específicos y comentarios."
-      expectedDate="Junio 2025"
+      expectedDate="Diciembre 2026"
       relatedLinks={[
         { label: "Summa Theologica", href: "/obras/summa-theologica" },
         { label: "Tratados Teológicos", href: "/teologia/tratados" },

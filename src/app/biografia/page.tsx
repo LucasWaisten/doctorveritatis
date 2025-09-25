@@ -5,7 +5,7 @@ export default function BiografiaPage() {
     <ComingSoonPage
       title="Biografía de Santo Tomás"
       description="Estamos preparando una biografía completa del Doctor Angélico, incluyendo su vida, formación, obras principales y legado teológico y filosófico."
-      expectedDate="Enero 2025"
+      expectedDate="Diciembre 2026"
       relatedLinks={[
         { label: "Summa Theologica", href: "/obras/summa-theologica" },
         { label: "Summa Contra Gentiles", href: "/obras/summa-contra-gentiles" },

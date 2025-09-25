@@ -177,9 +177,9 @@ export const GenericSidebar = ({
   };
 
   return (
-    <div className={`h-[calc(100vh-8rem)] bg-white border-r border-gray-200 transition-all duration-300 z-40 md:relative ${
+    <div className={`h-[calc(100vh-8rem)] bg-white border-r border-gray-200 transition-all duration-300 z-50 fixed md:relative left-0 top-0 ${
       isOpen ? (isExpanded ? 'w-96' : 'w-80') : 'w-12'
-    } ${isOpen ? 'fixed md:relative left-0 top-24' : ''}`}>
+    }`}>
       {/* Toggle Button */}
       <div className="flex items-center justify-between p-3 border-b border-gray-200">
         {isOpen && (

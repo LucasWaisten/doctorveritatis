@@ -5,7 +5,7 @@ export default function BookPage() {
     <ComingSoonPage
       title="Summa Contra Gentiles - Libros"
       description="Los libros individuales de la Summa Contra Gentiles están siendo preparados para su presentación digital. Cada libro será disponible con navegación completa por capítulos."
-      expectedDate="Diciembre 2024"
+      expectedDate="Diciembre 2026"
       relatedLinks={[
         { label: "Summa Contra Gentiles", href: "/obras/summa-contra-gentiles" },
         { label: "Summa Theologica", href: "/obras/summa-theologica" },

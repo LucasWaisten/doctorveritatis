@@ -1,0 +1,38 @@
+{
+  "contents": {
+    "commentary-sentences/I/d1/es": {
+      "id": "sent-i-d1-es",
+      "workSlug": "commentary-sentences",
+      "path": ["I", "d1"],
+      "language": "es",
+      "title": "Distinción 1 (ejemplo)",
+      "number": "Sent. I, d.1",
+      "sections": [
+        {
+          "type": "paragraph",
+          "label": "Texto",
+          "content": "Texto de ejemplo para el Comentario a las Sentencias I, distinción 1 en español. Sirve para validar el particionado por distinciones."
+        }
+      ],
+      "availableLanguages": ["es"]
+    },
+    "commentary-sentences/I/d2/es": {
+      "id": "sent-i-d2-es",
+      "workSlug": "commentary-sentences",
+      "path": ["I", "d2"],
+      "language": "es",
+      "title": "Distinción 2 (ejemplo)",
+      "number": "Sent. I, d.2",
+      "sections": [
+        {
+          "type": "paragraph",
+          "label": "Texto",
+          "content": "Otro fragmento de ejemplo para el Comentario a las Sentencias I, distinción 2 en español. También se carga desde el shard I-d1-20."
+        }
+      ],
+      "availableLanguages": ["es"]
+    }
+  }
+}
+
+

@@ -1,0 +1,130 @@
+{
+  "contents": {
+    "summa-theologiae/I/q2/a3/es": {
+      "id": "st-i-q2-a3-es",
+      "workSlug": "summa-theologiae",
+      "path": ["I", "q2", "a3"],
+      "language": "es",
+      "title": "Si Dios existe",
+      "number": "Artículo 3",
+      "availableLanguages": ["la", "es", "en", "fr"],
+      "sections": [
+        { "type": "title", "content": "Artículo 3: Si Dios existe" },
+        {
+          "type": "objectiones",
+          "label": "Objeciones",
+          "content": "Parece que Dios no existe:\n\n1. Si de dos contrarios uno fuera infinito, destruiría totalmente al otro. Pero el nombre \"Dios\" significa precisamente un bien infinito. Si, pues, Dios existiera, no habría mal alguno. Pero el mal se da en el mundo. Luego Dios no existe.\n\n2. Lo que pueden realizar pocos principios, no lo hacen muchos. Pues si suponemos que Dios no existe, encontramos que otros principios pueden realizar cuanto vemos en el mundo, ya que las cosas naturales se reducen al principio que es la naturaleza, y las libres, al principio que es la razón o voluntad humana. Por consiguiente, no hay necesidad de recurrir a que Dios exista."
+        },
+        {
+          "type": "sed-contra",
+          "label": "Por el contrario",
+          "content": "En el Éxodo se dice en la persona de Dios: \"Yo soy el que soy\" (Ex 3,14)."
+        },
+        {
+          "type": "respondeo",
+          "label": "Respondo",
+          "content": "La existencia de Dios puede ser probada de cinco maneras.\n\nLa primera y más clara es la que se deduce del movimiento. Es cierto, y lo perciben los sentidos, que en este mundo hay movimiento. Y todo lo que se mueve es movido por otro. Pues nada se mueve más que en cuanto está en potencia respecto a aquello para lo que se mueve. En cambio, mover requiere estar en acto, ya que mover no es otra cosa que hacer pasar algo de la potencia al acto; y esto no puede hacerlo más que lo que está en acto, como lo cálido en acto, por ejemplo el fuego, hace que un leño, que está cálido en potencia, pase a estar cálido en acto. Pero no es posible que una misma cosa esté, a la vez, en potencia y en acto respecto a lo mismo, sino sólo respecto a cosas diversas: lo que, por ejemplo, es cálido en acto no puede ser cálido en potencia, sino que en potencia es, a la vez, frío. Es, pues, imposible que una cosa sea por lo mismo y de la misma manera motor y móvil, como también lo es que se mueva a sí misma. Por consiguiente, todo lo que se mueve necesita ser movido por otro. Pero, si lo que mueve a otro es, a su vez, movido, es necesario que lo mueva un tercero, y a éste otro. Mas no se puede seguir indefinidamente, porque así no habría un primer motor y, por consiguiente, no habría motor alguno, pues los motores intermedios no mueven más que en virtud del primer motor, como un bastón nada mueve si no lo impulsa la mano. Por consiguiente, es necesario llegar a un primer motor que no sea movido por nadie; y éste es el que todos entienden por Dios.\n\nLa segunda vía se deduce de la causalidad eficiente. Hallamos que en este mundo sensible hay un orden de causas eficientes; pero no hallamos ni es posible que algo sea causa eficiente de sí mismo, porque de lo contrario sería anterior a sí mismo, cosa imposible. Ahora bien, tampoco se puede prolongar indefinidamente la serie de las causas eficientes porque siempre que hay causas eficientes subordinadas, la primera es causa de la intermedia, y ésta es causa de la última, sean pocas o muchas las intermedias. Pero quitada la causa, desaparece el efecto. Por consiguiente, si no existiese una primera causa entre las causas eficientes, tampoco existirían la intermedia ni la última. Si, pues, se prolongase indefinidamente la serie de causas eficientes, no habría causa eficiente primera, y así no habría efecto último ni causas eficientes intermedias, cosa evidentemente falsa. Por consiguiente, es necesario que exista una causa eficiente primera, a la que todos llaman Dios.\n\nLa tercera vía considera el ser posible o contingente y el necesario, y puede formularse así: Hallamos en la naturaleza cosas que pueden existir o no existir, pues vemos seres que se producen y seres que se destruyen, y, por tanto, hay posibilidad de que existan y de que no existan. Ahora bien, es imposible que los seres de esta condición hayan existido siempre, ya que lo que tiene posibilidad de no ser hubo un tiempo en que no fue. Si, pues, todas las cosas tienen la posibilidad de no ser, hubo un tiempo en que ninguna existía. Pero, si esto es verdad, tampoco debiera existir ahora cosa alguna, porque lo que no existe no empieza a existir más que en virtud de lo que ya existe, y, por tanto, si nada existía, fue imposible que empezase a existir alguna cosa, y, en consecuencia, ahora no habría nada, cosa evidentemente falsa. Por consiguiente, no todos los seres son posibles, sino que debe existir algo que sea necesario. Pero el ser necesario o tiene la razón de su necesidad en sí mismo o no la tiene. Si la tiene en otro, como no es posible, según hemos visto al tratar de las causas eficientes, aceptar una serie indefinida de cosas necesarias, es forzoso que exista algo que sea necesario por sí mismo y que no tenga fuera de sí la causa de su necesidad, sino que sea causa de la necesidad de los demás, a lo cual todos llaman Dios.\n\nLa cuarta vía se toma de los grados que hay en los seres. Vemos en los seres que unos son más o menos buenos, más o menos verdaderos, más o menos nobles, y así sucesivamente. Pero el más y el menos se predica de diversos seres según la diversa proximidad a lo máximo, como más cálido es lo que más se aproxima al máximo calor. Por tanto, ha de existir algo que sea verísimo, nobilísimo y óptimo, y por ello ente o ser supremo; pues, como se dice en el libro II de la Metafísica, lo que es verdad máxima es máxima entidad. Ahora bien, lo máximo en cualquier género es causa de todo lo que en aquel género existe, y así el fuego, que tiene el máximo calor, es causa del calor de todas las cosas, como se dice en el mismo libro. Existe, por consiguiente, algo que es para todas las cosas causa de su ser, de su bondad y de todas sus perfecciones, y a esto llamamos Dios.\n\nLa quinta vía se toma del gobierno del mundo. Vemos, en efecto, que algunas cosas que carecen de conocimiento, como los cuerpos naturales, obran por un fin, como se comprueba observando que siempre, o casi siempre, obran de la misma manera para conseguir lo que más les conviene; por donde se comprende que no van a su fin obrando al acaso, sino intencionadamente. Ahora bien, lo que carece de conocimiento no tiende a un fin si no lo dirige alguien que entienda y conozca, a la manera como el arquero dirige la flecha. Luego existe un ser inteligente que dirige todas las cosas naturales a su fin, y a éste llamamos Dios."
+        },
+        {
+          "type": "ad-primum",
+          "label": "Respuesta a la primera objeción",
+          "content": "Como dice San Agustín en el Enchiridion: \"Dios, por ser el bien sumo, de ninguna manera permitiría que hubiese en sus obras mal alguno si no fuera tan omnipotente y tan bueno que incluso del mal sacara un bien\". Pertenece, pues, a la infinita bondad de Dios permitir los males para sacar de ellos bienes.",
+          "number": 1
+        },
+        {
+          "type": "ad-secundum",
+          "label": "Respuesta a la segunda objeción",
+          "content": "Como la naturaleza obra por un fin determinado bajo la dirección de un agente superior, cuanto hace la naturaleza es necesario reducirlo a Dios como a primera causa. Asimismo, lo que se hace libremente debe reducirse a una causa superior que no sea la razón y voluntad humana, porque éstas son mudables y contingentes, y todo lo mudable y contingente tiene que reducirse a un primer principio que sea inmóvil y necesario por sí mismo, como ya se ha probado.",
+          "number": 2
+        }
+      ]
+    },
+    "summa-theologiae/I/q2/a3/la": {
+      "id": "st-i-q2-a3-la",
+      "workSlug": "summa-theologiae",
+      "path": ["I", "q2", "a3"],
+      "language": "la",
+      "title": "Utrum Deus sit",
+      "number": "Articulus 3",
+      "availableLanguages": ["la", "es", "en", "fr"],
+      "sections": [
+        { "type": "title", "content": "Articulus 3: Utrum Deus sit" },
+        {
+          "type": "objectiones",
+          "label": "Obiectiones",
+          "content": "Videtur quod Deus non sit. Quia si unum contrariorum fuerit infinitum, totaliter destruetur aliud. Sed hoc intelligitur in hoc nomine Deus, scilicet quod sit quoddam bonum infinitum. Si ergo Deus esset, nullum malum inveniretur. Invenitur autem malum in mundo. Ergo Deus non est."
+        },
+        {
+          "type": "sed-contra",
+          "label": "Sed contra",
+          "content": "Sed contra est quod dicitur Exodi III, ex persona Dei, ego sum qui sum."
+        },
+        {
+          "type": "respondeo",
+          "label": "Respondeo",
+          "content": "Respondeo dicendum quod Deum esse quinque viis probari potest.\n\nPrima autem et manifestior via est, quae sumitur ex parte motus. Certum est enim, et sensu constat, aliqua moveri in hoc mundo. Omne autem quod movetur, ab alio movetur..."
+        }
+      ]
+    },
+    "summa-theologiae/I/q1/a1/es": {
+      "id": "st-i-q1-a1-es",
+      "workSlug": "summa-theologiae",
+      "path": ["I", "q1", "a1"],
+      "language": "es",
+      "title": "Si es necesario que haya, además de las ciencias filosóficas, otra doctrina",
+      "number": "Artículo 1",
+      "availableLanguages": ["la", "es", "en", "fr"],
+      "sections": [
+        {
+          "type": "title",
+          "content": "Artículo 1: Si es necesario que haya, además de las ciencias filosóficas, otra doctrina"
+        },
+        {
+          "type": "objectiones",
+          "label": "Objeciones",
+          "content": "Parece que no es necesario que haya, además de las ciencias filosóficas, otra doctrina:\n\n1. El hombre no debe aspirar a lo que supera su razón, según aquello del Eclesiástico (3,22): \"No pretendas lo que te supera\". Ahora bien, lo que cae bajo la razón queda suficientemente tratado en las ciencias filosóficas. Por tanto, parece superfluo que haya otra doctrina además de las ciencias filosóficas.\n\n2. Una doctrina sólo puede versar sobre el ente, pues sólo se conoce la verdad. Pero las ciencias filosóficas tratan de todos los entes, incluso de Dios; por eso a una parte de la filosofía se la llama teología o ciencia divina, como dice el Filósofo en el libro VI de la Metafísica. Por tanto, no es necesario que haya otra doctrina además de las ciencias filosóficas."
+        },
+        {
+          "type": "sed-contra",
+          "label": "Por el contrario",
+          "content": "Está escrito en la segunda carta a Timoteo (3,16): \"Toda Escritura divinamente inspirada es útil para enseñar, para reprender, para corregir, para educar en la justicia\". Ahora bien, la Escritura divinamente inspirada no pertenece a las ciencias filosóficas, que son invención de la razón humana. Luego es útil que, además de las ciencias filosóficas, exista otra ciencia divinamente inspirada."
+        },
+        {
+          "type": "respondeo",
+          "label": "Respondo",
+          "content": "Fue necesario para la salvación del hombre que, además de las ciencias filosóficas, fruto de la investigación de la razón humana, hubiera otra ciencia inspirada por la revelación divina.\n\nPrimero, porque el hombre está ordenado a Dios como a un fin que supera la comprensión de la razón, según aquello de Isaías (64,4): \"Ojo no vio, fuera de ti, oh Dios, lo que tienes preparado para los que te aman\". Ahora bien, conviene que los hombres conozcan previamente el fin al que deben dirigir sus intenciones y sus acciones. Por tanto, fue necesario para la salvación del hombre que se le manifestasen por revelación divina ciertas verdades que superan la razón humana.\n\nTambién sobre aquellas cosas que la razón humana puede investigar acerca de Dios fue necesario que el hombre fuera instruido por revelación divina, porque la verdad sobre Dios investigada por la razón humana llegaría a pocos, después de mucho tiempo y mezclada con muchos errores. Y, sin embargo, del conocimiento de dicha verdad depende toda la salvación del hombre, que está en Dios. Por tanto, para que la salvación llegase a los hombres de un modo más conveniente y más cierto, fue necesario que acerca de las cosas divinas fuesen instruidos por revelación divina.\n\nDe ahí la necesidad de que, además de las ciencias filosóficas, fruto de la investigación de la razón, hubiera una doctrina sagrada por medio de la revelación."
+        },
+        {
+          "type": "ad-primum",
+          "label": "Respuesta a la primera objeción",
+          "content": "Aunque el hombre no debe investigar con la razón lo que la supera, debe, sin embargo, acoger por la fe lo que Dios le revela. Por eso añade el mismo texto: \"Muchas cosas te han sido mostradas que superan la inteligencia humana\" (Eclo 3,25). Y en estas cosas consiste la doctrina sagrada.",
+          "number": 1
+        },
+        {
+          "type": "ad-secundum",
+          "label": "Respuesta a la segunda objeción",
+          "content": "La diversidad de las ciencias proviene de la diversidad de los aspectos bajo los cuales las cosas son cognoscibles. Así, tanto el astrónomo como el físico pueden demostrar la misma conclusión, por ejemplo, que la tierra es redonda; pero el astrónomo lo hace por medio de las matemáticas, es decir, abstrayendo de la materia; en cambio, el físico lo hace considerando la materia. Por eso nada impide que unas mismas cosas que tratan las ciencias filosóficas en cuanto cognoscibles por la luz de la razón natural, sean también tratadas por otra ciencia en cuanto son conocidas por la luz de la revelación divina. Por tanto, la teología que pertenece a la doctrina sagrada difiere según el género de la teología que es parte de la filosofía.",
+          "number": 2
+        }
+      ]
+    },
+    "summa-contra-gentiles/L1/c1/es": {
+      "id": "scg-l1-c1-es",
+      "workSlug": "summa-contra-gentiles",
+      "path": ["L1", "c1"],
+      "language": "es",
+      "title": "Cuál es el oficio del sabio",
+      "number": "Capítulo 1",
+      "availableLanguages": ["la", "es", "en"],
+      "sections": [
+        { "type": "title", "content": "Capítulo 1: Cuál es el oficio del sabio" },
+        {
+          "type": "corpus",
+          "content": "\"Mi boca meditará la verdad, y mis labios detestarán la impiedad\" (Prov. 8, 7).\n\nEl uso común, que según el Filósofo (II Topicorum, cap. I) ha de seguirse al dar nombre a las cosas, ha querido que sean llamados sabios los que ordenan rectamente las cosas y las gobiernan bien. Por eso, entre otras cosas que los hombres piensan del sabio, el Filósofo aduce que \"corresponde al sabio ordenar\" (I Metaph., cap. II).\n\nAhora bien, la regla del gobierno y del orden de todo cuanto se ordena a un fin ha de tomarse del mismo fin; pues entonces cada cosa está perfectamente dispuesta cuando convenientemente se ordena a su fin, ya que el fin es el bien de cada cosa. Por eso vemos que en las artes una es la que rige y como impera a otra: aquella a la que pertenece su fin. Así, el arte de preparar los medicamentos gobierna a la de producir los mismos y la ordena, porque la sanidad, que es el objeto de aquella, es el fin de todos los medicamentos que se preparan según ésta. Lo mismo sucede en el arte de la navegación respecto de la construcción naval; y en el arte militar respecto del arte de la caballería y en todos los pertrechos de guerra.\n\nEstas artes, que tienen imperio sobre otras, se llaman arquitectónicas o artes principales; y los que las profesan, que son los arquitectos, usurpan el nombre de sabios. Pero, como estos artífices, que tratan de los fines de determinadas cosas singulares, no alcanzan al fin universal de todas las cosas, se llaman sabios en esto o en lo otro; por eso se dice en 1 Cor. 3, 10: \"Como sabio arquitecto puse el fundamento\"; mientras se reserva simplemente el nombre de \"sabio\" para aquél solo cuya consideración versa sobre el fin del universo, que es también su principio. De ahí que según el Filósofo (I Metaph., cap. II) pertenece al sabio considerar las cosas altísimas.\n\nEl fin último de cada cosa es el intentado por su primer autor o motor. Pero el primer autor y motor del universo es un entendimiento, como probaremos después (c. 44). Luego el último fin del universo ha de ser el bien del entendimiento, que es la verdad. Es necesario, por tanto, que la verdad sea el último fin de todo el universo; y a considerar tal verdad se ordena principalmente la sabiduría. Por eso la Sabiduría divina, revestida de carne, atestigua que vino al mundo a manifestar la verdad, diciendo en Juan 18, 37: \"Para esto nací y para esto vine al mundo: para dar testimonio de la verdad\".\n\nY el Filósofo (II Metaph., text. 4) determina que la filosofía primera es la ciencia de la verdad; no de cualquiera, sino de aquella verdad que es origen de toda verdad, o sea, de la que pertenece al primer principio del ser de todas las cosas. Por eso también su verdad es principio de toda verdad, ya que la disposición de las cosas en la verdad es la misma que en el ser.\n\nPues bien, pertenece a un mismo sujeto el perseguir una de las cosas contrarias y rechazar la otra: así, la medicina que da la salud rechaza también la enfermedad. Por lo cual, así como pertenece al sabio meditar y considerar la verdad especialmente del primer principio, así también pertenece a él impugnar la falsedad contraria."
+        }
+      ]
+    }
+  }
+}
+
+

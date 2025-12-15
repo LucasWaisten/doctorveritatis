@@ -1,0 +1,38 @@
+{
+  "contents": {
+    "summa-contra-gentiles/L1/c1/es": {
+      "id": "scg-l1-c1-es",
+      "workSlug": "summa-contra-gentiles",
+      "path": ["L1", "c1"],
+      "language": "es",
+      "title": "Cuál es el oficio del sabio",
+      "number": "SCG I, c.1",
+      "sections": [
+        {
+          "type": "paragraph",
+          "label": "Texto",
+          "content": "Texto de ejemplo para Suma contra los gentiles I, capítulo 1 en español. Este fragmento comprueba la carga desde el shard L1."
+        }
+      ],
+      "availableLanguages": ["es"]
+    },
+    "summa-contra-gentiles/L1/c2/es": {
+      "id": "scg-l1-c2-es",
+      "workSlug": "summa-contra-gentiles",
+      "path": ["L1", "c2"],
+      "language": "es",
+      "title": "Cuál es la intención del autor",
+      "number": "SCG I, c.2",
+      "sections": [
+        {
+          "type": "paragraph",
+          "label": "Texto",
+          "content": "Otro texto de ejemplo para Suma contra los gentiles I, capítulo 2 en español. También se carga desde el shard L1."
+        }
+      ],
+      "availableLanguages": ["es"]
+    }
+  }
+}
+
+

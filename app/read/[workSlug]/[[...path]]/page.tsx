@@ -35,12 +35,6 @@ export default function ReaderPage() {
   useEffect(() => {
     let cancelled = false;
 
-    console.log('[ReaderPage] loading content', {
-      workSlug,
-      path,
-      language,
-    });
-
     const load = async () => {
       if (!workSlug) {
         setContent(null);
@@ -48,10 +42,6 @@ export default function ReaderPage() {
       }
 
       const result = await getContent(workSlug, path, language);
-      console.log('[ReaderPage] getContent result', {
-        hasContent: !!result,
-        result,
-      });
       if (!cancelled) {
         setContent(result);
       }

@@ -1,4 +1,4 @@
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
 import { WorkNode } from '@/types';
 import { ChevronRight, ChevronDown } from 'lucide-react';
@@ -146,6 +146,12 @@ export const WorkIndex = ({ workSlug, index, currentPath = [], onSelect }: WorkI
   }, [index, currentPath]);
 
   const [expandedNodes, setExpandedNodes] = useState<Set<string>>(initialExpanded);
+
+  // Keep expanded nodes in sync when the initial expanded set changes,
+  // e.g. when navigating to a different section.
+  useEffect(() => {
+    setExpandedNodes(initialExpanded);
+  }, [initialExpanded]);
 
   const toggleNode = (id: string) => {
     setExpandedNodes((prev) => {
